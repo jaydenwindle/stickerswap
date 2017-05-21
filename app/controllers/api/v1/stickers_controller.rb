@@ -4,7 +4,6 @@ class Api::V1::StickersController < Api::V1::BaseController
   end 
   
   def create 
-    byebug
     respond_with :api, :v1, Sticker.create(sticker_params) 
   end 
   
