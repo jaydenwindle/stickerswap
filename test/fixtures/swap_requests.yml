@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  requester: one
+  requestee: one
+  sticker: one
+
+two:
+  requester: two
+  requestee: two
+  sticker: two
