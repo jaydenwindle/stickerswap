@@ -1,18 +1,28 @@
-# stickerswap
+# StickerSwap
 A web app for swapping stickers with strangers! Your laptop lid will be the envy of your dev friends in no time.
 
 =======
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
 Things you may want to cover:
 
-* Ruby version
+* Ruby version **2.3.3**
 
 * System dependencies
 
-* Configuration
+* Configuration </br>
+      # install dependencies
+      apt-get install ruby2.3 ruby2.3-dev sqlite3 nodejs
+      gem install rails bundler
+
+      # clone & setup gems
+      git clone https://github.com/jaydenwindle/stickerswap.git && cd stickerswap
+      bundle install
+
+      # Migrate the db
+      rake db:migrate
+
+      # Run the server
+      rails server
 
 * Database creation
 
