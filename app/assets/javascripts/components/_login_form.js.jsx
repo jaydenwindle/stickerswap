@@ -27,21 +27,35 @@ var LoginForm = React.createClass({
   render() { 
     var csrfToken = $('meta[name=csrf-token]').attr('content');
     return ( 
-      <div> 
-        <form id="loginForm" onSubmit={this.login}>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" className="form-control" id="email" onChange={this.handleEmailChange} />
+      <div className="modal fade" id="loginModal" tabIndex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Log In</h5>
+              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              <form id="loginForm" onSubmit={this.login}>
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input type="email" name="email" className="form-control" id="email" onChange={this.handleEmailChange} />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Password</label>
+                  <input type="password" name="password" className="form-control" id="password" onChange={this.handlePasswordChange}/>
+                </div>
+                <input type='hidden' name='utf8' value='✓' />
+                <input type='hidden' name='authenticity_token' value={csrfToken} />
+              </form>
+            </div>
+            <div className="modal-footer">
+              <button className="btn btn-primary" onClick={this.login}>Log In</button>
+            </div>
           </div>
-          <div className="form-group">
-            <label htmlFor="email">Password</label>
-            <input type="password" name="password" className="form-control" id="password" onChange={this.handlePasswordChange}/>
-          </div>
-          <input type='hidden' name='utf8' value='✓' />
-          <input type='hidden' name='authenticity_token' value={csrfToken} />
-          <button>Log In</button>
-        </form>
-      </div>  
+        </div>
+      </div>
     )  
   },
 });
