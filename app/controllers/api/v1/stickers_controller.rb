@@ -1,4 +1,6 @@
 class Api::V1::StickersController < Api::V1::BaseController
+  before_action :authenticate_user, only: [:create, :destroy, :update]
+
   def index 
     respond_with Sticker.all 
   end 
