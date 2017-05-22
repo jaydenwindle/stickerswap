@@ -12,6 +12,9 @@ gem "react-rails"
 gem "jquery-rails"
 gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
 
 # Back-end
 gem 'responders'
