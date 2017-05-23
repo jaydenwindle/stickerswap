@@ -9,10 +9,10 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
   # API Routes
-  namespace :api do 
-    namespace :v1 do 
-      resources :stickers, only: [:index, :create, :destroy, :update] 
-      resources :swap_requests, only: [:index, :create, :destroy, :update] 
-    end 
+  namespace :api do
+    namespace :v1 do
+      resources :stickers, only: [:index, :create, :destroy, :update]
+      resources :swap_requests, only: [:index, :create, :destroy, :update]
+    end
   end
 end
