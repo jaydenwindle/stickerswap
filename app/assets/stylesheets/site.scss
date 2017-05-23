@@ -1,3 +1,40 @@
-// Place all the styles related to the site controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Khula:300,400,600');
+/** To use different boldness use font-weight 300,400,600 Default is 400 **/
+
+
+$primary-color-dark:   #512DA8;
+$primary-color:        #673AB7;
+$primary-color-light:  #D1C4E9;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #536DFE;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+body{
+  font-family: 'Khula', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: auto;
+}
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+#hero{
+
+}
+
+@media(min-width:576px){
+
+}
+@media(min-width:768px){
+
+}
+@media(min-width:992px){
+
+}
+@media(min-width:1200px){
+
+}
