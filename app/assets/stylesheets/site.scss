@@ -13,8 +13,8 @@ $divider-color:        #BDBDBD;
 
 body{
   font-family: 'Khula', sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 0.938em;
+  line-height: 1.25em;
   font-weight: 300;
   letter-spacing: auto;
 }
@@ -23,7 +23,30 @@ h1,h2,h3,h4,h5,h6 {
 	text-rendering: optimizelegibility;
 }
 #hero{
-
+  vertical-align: top;
+  overflow-x: hidden;
+  text-rendering: optimizelegibility;
+  width: 100%;
+  background: linear-gradient(141deg, $primary-color-light 0%, $primary-color 51%, $primary-color-dark 75%);
+  background-size:cover;
+  min-height: 40em;
+  position: relative;
+  display: table;
+  #image{
+    margin-top: 4em;
+    #logo{
+      width:10em;
+      height:10em;
+    }
+  }
+  #about{
+    margin-top: 10em;
+    color: $primary-color-text;
+    h5{
+      font-weight: lighter;
+      font-size: 1.75em;
+    }
+  }
 }
 
 @media(min-width:576px){

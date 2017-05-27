@@ -9,16 +9,6 @@ var NavBar = React.createClass({
   }
 });
 
-var Hero = React.createClass({
-  render(){
-    return (
-      <article id="hero">
-        
-      </article>
-    )
-  }
-})
-
 var Main = React.createClass({
   render() {
     return (
