@@ -22,6 +22,9 @@ h1,h2,h3,h4,h5,h6 {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
 }
+
+/**== HERO ==**/
+
 #hero{
   #redblocktop{
     vertical-align: top;
@@ -86,8 +89,9 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+
+/**== INTRODUCTION ==**/
 #intro{
-  //background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0)), url('/assets/lib.jpg') no-repeat  center center fixed;
   width: 100%;
   overflow-x: hidden;
   height: 20em;
