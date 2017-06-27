@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Khula:300,400,600');
 /** To use different boldness use font-weight 300,400,600 Default is 400 **/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Raleway');
 
 
-$primary-color-dark:   #512DA8;
-$primary-color:        #673AB7;
-$primary-color-light:  #D1C4E9;
 $primary-color-text:   #FFFFFF;
 $accent-color:         #536DFE;
 $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
+$pink-tint:            #EB6654;
+$color-block-red:      #DE5947;
 
 body{
   font-family: 'Khula', sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 0.938em;
+  line-height: 1.25em;
   font-weight: 300;
   letter-spacing: auto;
 }
@@ -22,19 +22,180 @@ h1,h2,h3,h4,h5,h6 {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
 }
-#hero{
 
+/**== HERO ==**/
+
+#hero{
+  #redblocktop{
+    vertical-align: top;
+    overflow-x: hidden;
+    text-rendering: optimizelegibility;
+    width: 100%;
+    color: white;
+    background: $color-block-red;
+    background-size:cover;
+    height: 9.5em;
+    position: relative;
+    display: table;
+    border-radius: 0.95em 0.95em 0em 0em;
+    font-family: 'Raleway', sans-serif;
+    h2{
+      margin-top: 0.2em;
+      font-family: 'Indie Flower', cursive;
+      font-size:20vw;
+      font-weight: 900;
+    }
+    h5{
+      font-weight: lighter;
+      font-size: 7vw;
+    }
+  }
+
+  #logo{
+    margin-top: 0.2em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 20vw;
+    margin-bottom: 0.2em;
+  }
+
+  #redblockbot{
+    vertical-align: top;
+    overflow-x: hidden;
+    text-rendering: optimizelegibility;
+    width: 100%;
+    background: $color-block-red;
+    background-size:cover;
+    height: 5em;
+    position: relative;
+    display: table;
+    border-radius: 0em 0em 0.30em 0.30em;
+  }
+
+  #image{
+    margin-bottom: -2em;
+    #logo{
+      width:1em;
+      height:1em;
+    }
+  }
+  #about{
+    color: $primary-color-text;
+    margin-top: 1em;
+    h5{
+      font-weight: lighter;
+      font-size: 7vw;
+    }
+  }
 }
+
+
+/**== INTRODUCTION ==**/
+#intro{
+  width: 100%;
+  overflow-x: hidden;
+  height: 20em;
+  position: relative;
+  display: table;
+  background-size: cover;
+  #faqTitle{
+    margin-top: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    h4{
+        font-weight: 700;
+        font-size: 5vw;
+    }
+  }
+}
+
+
 
 @media(min-width:576px){
 
 }
+
+
+
 @media(min-width:768px){
 
 }
+
+
+
 @media(min-width:992px){
 
 }
-@media(min-width:1200px){
 
+
+
+@media(min-width:1200px){
+  body{
+    font-family: 'Khula', sans-serif;
+    font-size: 0.938em;
+    line-height: 1.25em;
+    font-weight: 300;
+    letter-spacing: auto;
+  }
+  h1,h2,h3,h4,h5,h6 {
+  	-webkit-font-smoothing: antialiased;
+  	text-rendering: optimizelegibility;
+  }
+  #hero{
+    #redblocktop{
+      vertical-align: top;
+      overflow-x: hidden;
+      text-rendering: optimizelegibility;
+      width: 100%;
+      color: white;
+      background: $color-block-red;
+      background-size:cover;
+      height: 10em;
+      position: relative;
+      display: table;
+      border-radius: 0.95em 0.95em 0em 0em;
+      font-family: 'Raleway', sans-serif;
+      h2{
+        font-family: 'Indie Flower', cursive;
+        font-size:7em;
+        font-weight: 900;
+      }
+      h5{
+        font-weight: lighter;
+        font-size: 2em;
+      }
+    }
+
+    #logo{
+      font-family: 'Dancing Script', cursive;
+      font-weight: bold;
+      font-size: 8em;
+      margin-bottom: 0.2em;
+    }
+
+    #redblockbot{
+      vertical-align: top;
+      overflow-x: hidden;
+      text-rendering: optimizelegibility;
+      width: 100%;
+      background: $color-block-red;
+      background-size:cover;
+      height: 5em;
+      position: relative;
+      display: table;
+    }
+
+    #image{
+      margin-bottom: -4em;
+      #logo{
+        width:1em;
+        height:1em;
+      }
+    }
+    #about{
+      h5{
+        font-weight: lighter;
+        font-size: 1.75em;
+      }
+    }
+  }
 }
